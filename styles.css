@@ -90,3 +90,44 @@ h1 {
     font-size: 0.8em;
     color: #6c757d;
 }
+/* --- ESTILOS PARA LAS IMÁGENES DE ATRACTIVOS --- */
+
+/* Ajuste del contenedor principal de la lista */
+.attraction-item {
+    /* Permitir que los detalles y el botón se alineen en los extremos */
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Contenedor de los detalles (imagen y texto) */
+.attraction-details {
+    display: flex; /* Permite alinear la imagen y el texto horizontalmente */
+    align-items: center;
+}
+
+/* Estilo para la imagen representativa */
+.attraction-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Esto la hace redonda */
+    margin-right: 10px;
+    /* Propiedades para mostrar bien la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-color: #f0f0f0; /* Fondo si la imagen no carga */
+    border: 1px solid #ddd;
+}
+
+/* Estilo para el texto del nombre del atractivo */
+.attraction-details span {
+    font-weight: bold;
+    color: #495057;
+}
+
+/* Ajuste para el estado validado */
+.validated .attraction-details span {
+    text-decoration: line-through;
+    color: #6c757d;
+}
